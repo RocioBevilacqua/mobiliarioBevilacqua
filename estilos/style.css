@@ -1,0 +1,750 @@
+/*Link fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+/* TODO EL BODY*/
+* {
+    padding: 0;
+    margin: 0;
+
+
+
+    /*background-color: #334e58;*/
+}
+
+
+/*MENÚ*/
+/*header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+
+}*/
+@media (min-width:480px){
+.menuContainer{
+    color: black;
+    
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    padding: 20px 0;
+
+}
+.menu ul li a {
+
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    color: black;
+    margin: 40px 0;}
+
+
+.logoContainer {
+    width: 20%;
+    padding:0 40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logo {
+    width: 100%;}
+}
+
+@media (min-width:768px) {
+    .menuContainer {
+        color: #fff;
+        background-color: black;
+        height: 100px;
+    
+        display: flex;
+        flex-direction:row;
+        
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 100%;
+        list-style: none;
+        padding: 20px 0;
+    
+    }
+    
+    .menu ul li a {
+    
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Merriweather', serif;
+        color: #334e58;
+        margin: 40px 0;
+
+    
+    }
+    
+    .logoContainer {
+        width: 22%;
+        padding: 0 50px;
+    }
+    
+    .logo {
+        width: 100%;
+    
+    
+    }
+}
+
+
+
+@media (min-width:1024px) {
+.menuContainer {
+    color: #fff;
+    background-color: black;
+    height: 100px;
+
+    display: flex;
+    justify-content: start;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    list-style: none;
+    padding: 20px 0;
+
+}
+
+.menu ul li a {
+
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Merriweather', serif;
+    color: #334e58;
+    margin: 40px 0;
+
+}
+
+.logoContainer {
+    width: 18%;
+    
+}
+
+.logo {
+    width: 100%;
+
+
+}
+}
+/*MI PÁGINA PRINCIPAL*/
+
+/*Carrousel*/
+
+/* Link a tienda */
+.linkTienda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkTienda h1 {
+    font-family: 'Merriweather', serif;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.linkTienda .boton {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    color: white;
+    width: 15%;
+    height: 50%;
+    cursor: pointer;
+    /* margin: 5px 570px;*/
+    transition: .8s ease all;
+
+}
+
+.boton:hover {
+    background: #334e58;
+    border: 2px solid #334e58;
+    transform: scale(2);
+}
+
+/*Imagenes de mi Home*/
+
+.containerHome {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: minmax(250px, auto);
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 80px;
+
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/*Video de Home*/
+
+.videoHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+
+}
+
+/*Nuestros Servicios*/
+
+.btnWsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 60px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.btnWsp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
+
+.containerServicios {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    height: 180px;
+    background-color: #334e58;
+    padding-top: 30px;
+}
+
+.fa-solid {
+    color: #fff
+}
+
+.divServicios .medios {
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    color: white;
+    display: block;
+
+}
+
+/*FOOTER*/
+@media (min-width:480px){
+    .piePagina {
+        width: 100%;
+        margin: 5px 0;
+        
+    }
+    
+    .piePagina .grupoUno {
+        width: 100%;
+        max-width: 1200px;
+        
+        display: grid;
+        grid-template-rows: repeat(3fr, 1fr);
+       
+        /*grid-gap: 50px;*/
+        padding: 45px 0;
+    
+    }
+    
+    .piePagina .grupoUno .box figure {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .piePagina .grupoUno .box p {
+        font-family: 'Merriweather', serif;
+        font-size: 16px;
+    
+    }
+    
+    .piePagina .grupoUno .box figure img {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    
+    
+    .piePagina .grupoUno .box .fa-solid {
+        color: black;
+    
+    }
+    
+    .grupoDos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grupoDos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grupoDos .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grupoDos .box .fa-brands {
+        color: black;
+        size: 24px;
+    }
+    
+    .grupoDos .derechos {
+        font-family: 'Merriweather', serif;
+        font-size: 16px;
+    }
+}
+@media (min-width:1024px){
+.piePagina {
+    width: 100%;
+
+}
+
+.piePagina .grupoUno {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 50px;
+    padding: 45px 0;
+
+}
+
+.piePagina .grupoUno .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.piePagina .grupoUno .box p {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+
+}
+
+.piePagina .grupoUno .box figure img {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.piePagina .grupoUno .box iframe {
+    width: 25%;
+}
+
+.piePagina .grupoUno .box .fa-solid {
+    color: black;
+
+}
+
+.grupoDos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupoDos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupoDos .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupoDos .box .fa-brands {
+    color: black;
+    size: 24px;
+}
+
+.grupoDos .derechos {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+}
+}
+
+/*------------CATÁLOGO-----------*/
+
+
+
+.buttonsTienda button {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    color: white;
+    width: 20%;
+    height: 30%;
+    cursor: pointer;
+    margin: 5px 180px;
+    transition: .4s ease all;
+
+
+}
+
+
+.button-tienda button:hover {
+    background: #334e58;
+    border: 2px solid #334e58;
+}
+
+.containerTienda {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 10px;
+    padding: 40px 0;
+    margin: auto;
+    width: 95%;
+
+
+}
+
+.containerTienda img {
+    width: 100%;
+
+}
+
+
+/*.containerTienda img:hover{
+filter: opacity(0.9);
+transform: scale(1.4);
+}*/
+
+/*------------NOSOTROS-----------------*/
+.mainNosotros {
+    background-color: #fff;
+
+}
+
+.imgNosotros img {
+    width: 100%;
+}
+
+.textoNosotros h3 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    color: #fff;
+}
+
+/*-----------PREGUNTAS FRECUENTES----------------*/
+/*mobile-smartphone*/
+* {
+    margin: 0;
+    padding: 0;
+}
+@media (min-width:480px){
+#grid {
+    display: grid;
+    grid-template-areas:
+        "header "
+        "productos"
+        "mediosPago"
+        "entregas"
+        "servicios"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 30% auto auto 12% 50px;
+    gap:2px;
+}
+
+
+/*declarar areas*/
+header {
+    grid-area: header;
+}
+
+section#productos {
+    grid-area: productos;
+    margin: 0 3px;
+
+}
+
+section#mediosPago {
+    grid-area: mediosPago;
+    margin: 0 3px;
+}
+
+section#entregas {
+    grid-area: entregas;
+    margin: 0 3px;
+}
+
+section#containerServicios {
+    grid-area: servicios;
+}
+
+footer {
+    grid-area: footer;
+}
+
+section#productos {
+    background-color: #334e58;
+
+}
+
+
+#productos p {
+    font-family: 'Crimson Text', serif;
+}
+
+
+#productos .pregunta {
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+}
+
+section#mediosPago {
+
+    background-color: rgb(255, 255, 34);
+}
+
+#mediosPago p {
+    font-family: 'Crimson Text', serif;
+}
+
+#mediosPago .pregunta {
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #334e58
+}
+
+section#entregas {
+    background-color: black;
+
+}
+
+#entregas p {
+    font-family: 'Crimson Text', serif;
+    color: #fff;
+}
+
+#entregas .pregunta {
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #334e58
+}
+
+
+
+.titulo {
+    font-family: 'Crimson Text', serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+.menuContainer{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+@media (min-width:768px){
+    #grid {
+        display: grid;
+        grid-template-areas:
+            "header    header"
+            "productos mediosPago"
+            "productos mediosPago"
+            "entregas  entregas"
+            "servicios servicios"
+            "footer    footer";
+
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 30% auto auto 12% 100px;
+        gap: 6px;
+    }
+}
+
+/*desktop*/
+@media (min-width:1024px) {
+    #grid {
+        width: 100%;
+        height: 100vh;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-areas:
+            "header    header"
+            "productos mediosPago"
+            "productos mediosPago"
+            "entregas  entregas"
+            "servicios servicios"
+            "footer    footer";
+
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 30% auto auto 30% 100px;
+        gap: 6px;
+    }
+
+    section#productos {
+        margin: 0 3px;
+
+    }
+
+    section#mediosPago {
+        margin: 0 3px;
+    }
+
+    section#entregas {
+        margin: 0 3px;
+    }
+
+    section#productos {
+        background-color: #334e58;
+
+    }
+
+
+    #productos p {
+        font-family: 'Crimson Text', serif;
+    }
+
+
+    #productos .pregunta {
+        font-family: 'Crimson Text', serif;
+        font-size: 18px;
+        font-weight: 300;
+        color: #fff;
+    }
+
+    section#mediosPago {
+
+        background-color: rgb(255, 255, 34);
+    }
+
+    #mediosPago p {
+        font-family: 'Crimson Text', serif;
+    }
+
+    #mediosPago .pregunta {
+        font-family: 'Crimson Text', serif;
+        font-size: 18px;
+        font-weight: 300;
+        color: #334e58
+    }
+
+    section#entregas {
+        background-color: black;
+
+    }
+
+    #entregas p {
+        font-family: 'Crimson Text', serif;
+        color: #fff;
+    }
+
+    #entregas .pregunta {
+        font-family: 'Crimson Text', serif;
+        font-size: 18px;
+        font-weight: 300;
+        color: #334e58
+    }
+
+
+
+    .titulo {
+        font-family: 'Crimson Text', serif;
+        font-size: 30px;
+        font-weight: 400;
+        color: #fff;
+        text-align: center;
+    }
+
+
+}
+
+
+
+/*PÁGINA DE CONTACTO*/
+
+.bodyContacto {
+    background-image: url(../imagenes/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+}
+
+
+.formularioContacto {
+    background-color: #fff;
+    width: 60%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 100px 40px;
+    margin: 20px 230px
+}
+
+.tituloFormulario {
+    display: flex;
+    font-size: 24px;
+}
